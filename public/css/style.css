@@ -2,11 +2,9 @@
   list-style: none;
 }
 
-#templateAside{
-  border-left: 12px solid green;
-
+a{
+  color: blue;
 }
-
-footer{
-  background-color: blue;
+a:hover{
+  text-decoration: underline;
 }
