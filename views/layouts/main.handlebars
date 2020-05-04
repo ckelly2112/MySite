@@ -1,60 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Christopher Kelly</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crushed&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
-<body>
-    <header id="mainHeader">
-        <h1><a href="/" class="customLink">Christopher Kelly</a></h1>
-        <nav id="mainNavigation">
-            <ul>
-                <li><a href="/" class="linkButton">Home</a></li>
-                <li><a href="/web" class="linkButton">Websites</a></li>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav id="mainNavigation" class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="/" class="navbar-brand">Christopher Kelly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style>
 
-                {{!-- <li><a href="/apps" class="linkButton">Apps</a></li> --}}
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/" class="linkButton">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/web" class="linkButton">Websites</a></li>
 
-                <li><a href="/aboutMe" class="linkButton">About Me</a></li>
-                <li><a href="/links" class="linkButton">Links</a></li>
-            </ul>
+                    {{!-- <li><a href="/apps" class="linkButton">Apps</a></li> --}}
+                    <li class="nav-item"><a class="nav-link" href="/aboutMe" class="linkButton">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/links" class="linkButton">Links</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div id="bodyAndSide">
+    <main role="main" class="container flex-shrink-0">
+        <div class="row" id="bodyAndSide">
+            <div class="col-sm-8 col-md-8">
 
-        <div id="templateBody">
-            {{{body}}}
+                {{{body}}}
+            </div>
+            
+            <aside class="col-sm col-md mt-3" id="templateAside">
+                <h2 class="asideHeader">Contact Info</h4>
+                    <ul class="asideList">
+                        <li>Name: Christopher Kelly</li>
+                        <li><i class="fas fa-phone-square"></i> 905-995-1105</li>
+                        <li><i class="fas fa-at"></i> <a href="mailto: ckelly.tor@gmail.com"
+                                class="noDisplayLink">ckelly.tor@gmail.com</a></li>
+                        <li><i class="fas fa-file-pdf"></i> <a href="files/ChristopherKelly_Resume.pdf" target="none"
+                                class="noDisplayLink"> Resume</a>
+                        </li>
+                    </ul>
+            </aside>
         </div>
-        <aside id="templateAside">
-            <h2 class="asideHeader">Contact Info</h4>
-            <ul class="asideList">
-                <li><span id="listSpan">Name:</span> Christopher Kelly</li>
-                <li><span id="listSpan"><i class="fas fa-phone-square"></i></span> 905-995-1105</li>
-                <li><span id="listSpan"><i class="fas fa-at"></i></span> <a href="mailto: ckelly.tor@gmail.com" class="noDisplayLink">ckelly.tor@gmail.com</a></li>
-                <li><span id="listSpan"><i class="fas fa-file-pdf"></i></span> <a href="files/ChristopherKelly_Resume.pdf" target="none" class="noDisplayLink"> Resume</a></li>
-            </ul>
-        </aside>
-    </div>
+    </main>
 
-    <footer>
-        <div id="footerContent">
-            <div id="icons">
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div id="icons" class="row">
                 <a href="https://www.linkedin.com/in/ckellytor" target="none"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ckelly2112" target="none"><i class="fab fa-github"></i></a>
             </div>
-            <div id="createdBy">
+            <div class="row" id="createdBy">
                 <h6>Created by <a href="/">Christopher Kelly</a></h6>
             </div>
         </div>
     </footer>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
