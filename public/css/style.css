@@ -9,3 +9,7 @@ a{
 a:hover{
   text-decoration: underline;
 }
+
+.img-thumbnail:hover{
+  opacity: 60%;
+}
