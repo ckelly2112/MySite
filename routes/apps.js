@@ -13,4 +13,8 @@ route.get('/eatMeSite', (req, res)=>{
     res.redirect('http://eatme-public.herokuapp.com')
 })
 
+route.get('/SimpleCheckList', (req,res)=>{
+    res.render('appProjects/SimpleCheckList')
+})
+
 module.exports = route;
